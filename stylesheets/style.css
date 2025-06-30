@@ -1,0 +1,13 @@
+@import "reset.css";
+@import "content.css"; 
+@import "adaptive.css";
+
+
+@font-face {
+    font-family: "HelveticaRegular";
+    src: url(../fonts/HelveticaRegular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: regular;
+    letter-spacing: -7%;
+    }
+ 

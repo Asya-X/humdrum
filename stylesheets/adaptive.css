@@ -1,0 +1,1167 @@
+/* ///////////////////////// Мобильные устройства ///////////////////////// */
+@media screen and (max-width: 414px) and (orientation: portrait) {
+    /* Вертикальная ориентация для мобильных устройств иногда 430px */
+    
+    /* Отключение кастомного курсора на мобильных устройствах */
+    #custom_cursor {
+        display: none;
+    }
+    
+    .force_hide_cursor {
+        cursor: auto;
+    }
+    
+    .force_hide_cursor * {
+        cursor: auto;
+    }
+    
+
+    .main_content {
+        flex-direction: column;
+        gap: 4vw;
+        padding: 4vw;
+        padding-bottom: 20vw;
+    }
+    
+    .menu {
+        width: 100%;
+        gap: 2vw;
+    }
+    
+    .tab {
+        height: 8vw;
+        width: 100%;
+        transform: none;
+        font-size: 4vw;
+        padding: 2vw;
+        justify-content: center;
+    }
+    
+    .tab:hover,
+    .tab.active {
+        transform: none;
+        box-shadow: 0 0 10px 5px rgba(255, 0, 214, 0.3);
+    }
+    
+    .products_section {
+        width: 100%;
+        padding: 4vw;
+        gap: 6vw;
+    }
+    
+    .category_title {
+        font-size: 5vw;
+        height: 10vw;
+        line-height: 9vw;
+        text-align: center;
+        background-image: none;
+        background: none;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+        color: #FF00D6;
+        font-weight: bold;
+    }
+    
+    .category_title::before {
+        display: none;
+    }
+    
+    .item {
+        gap: 4vw;
+        padding: 2vw 0;
+        margin: 0;
+    }
+    
+    .item_name {
+        font-size: 3vw;
+        padding: 2vw 0;
+        margin: 0;
+    }
+    
+    .item_price {
+        font-size: 3vw;
+        flex: 0 0 20vw;
+        margin: 0;
+    }
+    
+    .item_details {
+        font-size: 3vw;
+        margin-top: -2vw;
+        margin-bottom: 0;
+    }
+    
+    .item.active + .item_details {
+        max-height: 40vw;
+    }
+
+    .slide_card {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        transform: none;
+        cursor: default;
+        left: 0;
+        right: 0;
+    }
+    
+    .slide_card.right {
+        position: static;
+        top: auto;
+        right: auto;
+        transform: none;
+    }
+    
+    .slide_card .arrow_wrapper {
+        display: none;
+    }
+    
+    .slide_card .toggle_arrow {
+        display: none;
+    }
+    
+    .card_content {
+        padding: 4vw;
+        gap: 2vw;
+        justify-content: center;
+    }
+    
+    .card_text {
+        font-size: 4vw;
+        margin-right: 0;
+        text-align: center;
+    }
+    
+    .grad_circle {
+        display: none;
+    }
+    
+
+    body .title {
+        min-height: 20vh;
+        padding: 8vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../images/back_title.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    body .title h1 {
+        font-size: 8vw;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+        position: relative;
+        left: 0;
+        right: 0;
+        transform: none;
+    }
+    
+ 
+    .note1,
+    .note2,
+    .note3 {
+        width: 90vw;
+        margin: 4vw auto;
+        text-align: center;
+        font-size: 4vw;
+        height: auto;
+        min-height: 20vw;
+    }
+
+    .slide_card:not(:first-child) {
+        display: none;
+    }
+
+    .footer {
+        font-size: 2.2vw;
+        padding: 2vw 0;
+        position: relative;
+        bottom: 0;
+        height: auto;
+        min-height: 8vw;
+    }
+    
+    .footer_text_container {
+        padding: 0 2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1vw;
+    }
+    
+    .footer_text_left,
+    .footer_text_right {
+        font-size: 2.2vw;
+        display: block;
+        text-align: center;
+    }
+ 
+    .whole {
+        flex-direction: column;
+        gap: 6vw;
+        margin-bottom: 6vw;
+        margin-top: 6vw;
+        font-size: 4vw;
+    }
+    
+    .first_half {
+        width: 100%;
+        gap: 6vw;
+    }
+    
+    .half_half {
+        flex-direction: column;
+        width: 100%;
+        align-self: center;
+        gap: 4vw;
+    }
+    
+    .second_half {
+        align-items: center;
+        width: 100%;
+        gap: 6vw;
+    }
+    
+    .second_half p,
+    .second_half h2 {
+        align-self: center;
+        width: 90vw;
+        text-align: center;
+        font-size: 4vw;
+        line-height: 1.4;
+    }
+    
+    .left_card_grad_circle {
+        display: none;
+    }
+    
+    .left_card_text {
+        font-size: 4vw;
+        text-align: center;
+        margin-left: 0;
+        padding: 4vw;
+    }
+    
+    .left_card_arrow_wrapper {
+        display: none;
+    }
+    
+    .image_carousel1 {
+        width: 90vw;
+        height: 60vw;
+        margin-left: 0;
+        margin: 0 auto;
+    }
+    
+    .image_carousel2 {
+        width: 90vw;
+        height: 30vw;
+        margin: 0 auto;
+    }
+    
+    .image_carousel3 {
+        width: 90vw;
+        height: 60vw;
+        margin: 0 auto;
+    }
+   
+    .text {
+        width: 90vw;
+        font-size: 4vw;
+        text-align: center;
+        margin-top: 4vw;
+        margin-left: 0;
+        margin: 4vw auto;
+    }
+    
+    .easter_egg {
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center;
+        gap: 4vw;
+    }
+    
+    .character {
+        height: 40vw;
+        width: auto;
+    }
+    
+    .easter_egg .text {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        margin-left: 0;
+        width: 90vw;
+        font-size: 4vw;
+        text-align: center;
+    }
+    
+
+    .text br {
+        display: none;
+    }
+
+    .text {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+    
+    .play {
+        margin: 4vw auto;
+    }
+    
+
+    .events_menu {
+        width: 100%;
+        gap: 2vw;
+        padding: 4vw;
+    }
+    
+    .event_tab {
+        height: 8vw;
+        font-size: 4vw;
+        padding: 2vw;
+        justify-content: center;
+    }
+    
+    .event_section {
+        padding: 4vw;
+        gap: 4vw;
+    }
+    
+    .event_block {
+        flex-direction: column;
+        gap: 3vw;
+        padding: 4vw;
+    }
+    
+    .event_left h3 {
+        font-size: 4vw;
+        margin-bottom: 2vw;
+        text-align: center;
+    }
+    
+    .event_left p {
+        font-size: 4vw;
+        margin-bottom: 2vw;
+        text-align: center;
+    }
+    
+    .event_image {
+        flex: none;
+        width: 60vw;
+        height: 85vw; 
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 414px) and (orientation: landscape) {
+    /* Горизонтальная ориентация для мобильных устройств */
+    
+    /* Отключение кастомного курсора на мобильных устройствах */
+    #custom_cursor {
+        display: none;
+    }
+    
+    .force_hide_cursor {
+        cursor: auto;
+    }
+    
+    .force_hide_cursor * {
+        cursor: auto;
+    }
+
+    .main_content {
+        flex-direction: row;
+        gap: 3vw;
+        padding: 3vw;
+        padding-bottom: 15vw;
+    }
+    
+    .menu {
+        width: 25vw;
+        gap: 1.5vw;
+    }
+    
+    .tab {
+        height: 6vw;
+        width: 25vw;
+        transform: translateX(-30%);
+        font-size: 2.5vw;
+        padding: 1.5vw;
+        justify-content: flex-end;
+    }
+    
+    .tab:hover,
+    .tab.active {
+        transform: translateX(-1vw);
+        box-shadow: 0 0 8px 4px rgba(255, 0, 214, 0.3);
+    }
+    
+    .products_section {
+        width: 75vw;
+        padding: 3vw;
+        gap: 4vw;
+    }
+    
+    .category_title {
+        font-size: 3.5vw;
+        height: 7vw;
+        line-height: 6vw;
+        text-align: center;
+        background-image: none;
+        background: none;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+        color: #FF00D6;
+        font-weight: bold;
+    }
+    
+    .category_title::before {
+        display: none;
+    }
+    
+    .item {
+        gap: 2vw;
+        padding: 1vw 0;
+        margin: 0;
+    }
+    
+    .item_name {
+        font-size: 2vw;
+        padding: 1vw 0;
+        margin: 0;
+    }
+    
+    .item_price {
+        font-size: 2vw;
+        flex: 0 0 15vw;
+        margin: 0;
+    }
+    
+    .item_details {
+        font-size: 2vw;
+        margin-top: -1vw;
+        margin-bottom: 0;
+    }
+    
+    .item.active + .item_details {
+        max-height: 25vw;
+    }
+
+    .slide_card {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        transform: none;
+        cursor: default;
+        left: 0;
+        right: 0;
+    }
+    
+    .slide_card.right {
+        position: static;
+        top: auto;
+        right: auto;
+        transform: none;
+    }
+    
+    .card_text {
+        font-size: 2.5vw;
+        margin-right: 0;
+        text-align: center;
+    }
+    
+    .grad_circle {
+        display: none;
+    }
+    
+    .arrow_wrapper {
+        display: none;
+    }
+
+    body .title {
+        min-height: 15vh;
+        padding: 6vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../images/back_title.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    body .title h1 {
+        font-size: 6vw;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+        position: relative;
+        left: 0;
+        right: 0;
+        transform: none;
+    }
+
+    .note1,
+    .note2,
+    .note3 {
+        width: 75vw;
+        margin: 3vw auto;
+        text-align: center;
+        font-size: 2.5vw;
+        height: auto;
+        min-height: 15vw;
+    }
+
+    .slide_card:not(:first-child) {
+        display: none;
+    }
+    
+
+    .footer {
+        font-size: 1.8vw;
+        padding: 1.5vw 0;
+        position: relative;
+        bottom: 0;
+        height: auto;
+        min-height: 6vw;
+    }
+    
+    .footer_text_container {
+        padding: 0 1.5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5vw;
+    }
+    
+    .footer_text_left,
+    .footer_text_right {
+        font-size: 1.8vw;
+        display: block;
+        text-align: center;
+    }
+
+    .whole {
+        flex-direction: column;
+        gap: 4vw;
+        margin-bottom: 4vw;
+        margin-top: 4vw;
+        font-size: 2.5vw;
+    }
+    
+    .first_half {
+        width: 100%;
+        gap: 4vw;
+    }
+    
+    .half_half {
+        flex-direction: column;
+        width: 100%;
+        align-self: center;
+        gap: 2vw;
+    }
+    
+    .second_half {
+        align-items: center;
+        width: 100%;
+        gap: 4vw;
+    }
+    
+    .second_half p,
+    .second_half h2 {
+        align-self: center;
+        width: 75vw;
+        text-align: center;
+        font-size: 2.5vw;
+        line-height: 1.4;
+    }
+    
+    .left_card_grad_circle {
+        display: none;
+    }
+    
+    .left_card_text {
+        font-size: 2.5vw;
+        text-align: center;
+        margin-left: 0;
+        padding: 2vw;
+    }
+    
+    .left_card_arrow_wrapper {
+        display: none;
+    }
+    
+    .image_carousel1 {
+        width: 75vw;
+        height: 40vw;
+        margin-left: 0;
+        margin: 0 auto;
+    }
+    
+    .image_carousel2 {
+        width: 75vw;
+        height: 20vw;
+        margin: 0 auto;
+    }
+    
+    .image_carousel3 {
+        width: 75vw;
+        height: 40vw;
+        margin: 0 auto;
+    }
+    
+
+    .text {
+        width: 75vw;
+        font-size: 2.5vw;
+        text-align: center;
+        margin-top: 3vw;
+        margin-left: 0;
+        margin: 3vw auto;
+    }
+    
+    .easter_egg {
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center;
+        gap: 2vw;
+    }
+    
+    .character {
+        height: 25vw;
+        width: auto;
+    }
+    
+    .easter_egg .text {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        margin-left: 0;
+        width: 75vw;
+        font-size: 2.5vw;
+        text-align: center;
+    }
+    
+
+    .text br {
+        display: none;
+    }
+    
+
+    .text {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+    
+    .play {
+        margin: 4vw auto;
+    }
+    
+
+    .events_menu {
+        width: 100%;
+        gap: 2vw;
+        padding: 4vw;
+    }
+    
+    .event_tab {
+        height: 8vw;
+        font-size: 4vw;
+        padding: 2vw;
+        justify-content: center;
+    }
+    
+    .event_section {
+        padding: 4vw;
+        gap: 4vw;
+    }
+    
+    .event_block {
+        flex-direction: column;
+        gap: 3vw;
+        padding: 4vw;
+    }
+    
+    .event_left h3 {
+        font-size: 4vw;
+        margin-bottom: 2vw;
+        text-align: center;
+    }
+    
+    .event_left p {
+        font-size: 4vw;
+        margin-bottom: 2vw;
+        text-align: center;
+    }
+    
+    .event_image {
+        flex: none;
+        width: 60vw;
+        height: 85vw; 
+        margin: 0 auto;
+    }
+
+    .button {
+        height: 5vw;
+        max-width: 25vw;
+        margin-left: 3vw;
+        font-size: 2.5vw;
+        padding: 2vw;
+    }
+    
+    .play {
+        margin-left: 20vw;
+        margin-top: 2vw;
+        margin-bottom: 6vw; 
+}
+
+/* ///////////////////////// Планшеты ///////////////////////// */
+@media screen and (min-width: 415px) and (max-width: 768px) and (orientation: portrait) {
+    /* Вертикальная ориентация для планшетов */
+    
+    /* Отключение кастомного курсора на мобильных устройствах */
+    #custom_cursor {
+        display: none;
+    }
+    
+    .force_hide_cursor {
+        cursor: auto;
+    }
+    
+    .force_hide_cursor * {
+        cursor: auto;
+    }
+    
+
+    .main_content {
+        flex-direction: column;
+        gap: 3vw;
+        padding: 3vw;
+        padding-bottom: 15vw;
+        position: static;
+        padding-left: 3vw;
+    }
+    
+    .menu {
+        width: 100%;
+        margin-left: 0;
+        gap: 1.5vw;
+    }
+    
+    .tab {
+        height: 6vw;
+        width: 100%;
+        transform: translateX(-30%);
+        font-size: 2.5vw;
+        padding: 1.5vw;
+        justify-content: flex-end;
+    }
+    
+    .tab:hover,
+    .tab.active {
+        transform: translateX(-1vw);
+        box-shadow: 0 0 8px 4px rgba(255, 0, 214, 0.3);
+    }
+    
+    .products_section {
+        width: 100%;
+        margin-left: 0;
+        padding: 3vw;
+        gap: 4vw;
+    }
+    
+    .category_title {
+        font-size: 4vw;
+        height: 8vw;
+        line-height: 7vw;
+        text-align: center;
+        background-image: none;
+        background: none;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+        color: #FF00D6;
+        font-weight: bold;
+    }
+    
+    .category_title::before {
+        display: none;
+    }
+    
+    .item {
+        gap: 3vw;
+        padding: 1.5vw 0;
+        margin: 0;
+    }
+    
+    .item_name {
+        font-size: 2.5vw;
+        padding: 1.5vw 0;
+        margin: 0;
+    }
+    
+    .item_price {
+        font-size: 2.5vw;
+        flex: 0 0 18vw;
+        margin: 0;
+    }
+    
+    .item_details {
+        font-size: 2.5vw;
+        margin-top: -1.5vw;
+        margin-bottom: 0;
+    }
+    
+    .item.active + .item_details {
+        max-height: 30vw;
+    }
+    
+
+    .slide_card {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        transform: none;
+        cursor: default;
+        left: 0;
+        right: 0;
+    }
+    
+    .slide_card.right {
+        position: static;
+        top: auto;
+        right: auto;
+        transform: none;
+    }
+    
+    .card_text {
+        font-size: 3vw;
+        margin-right: 0;
+        text-align: center;
+    }
+    
+    .grad_circle {
+        display: none;
+    }
+    
+    .arrow_wrapper {
+        display: none;
+    }
+    
+
+    body .title {
+        min-height: 18vh;
+        padding: 6vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../images/back_title.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    body .title h1 {
+        font-size: 7vw;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+        position: relative;
+        left: 0;
+        right: 0;
+        transform: none;
+    }
+    
+
+    .note1,
+    .note2,
+    .note3 {
+        width: 85vw;
+        margin: 3vw auto;
+        text-align: center;
+        font-size: 3.5vw;
+        height: auto;
+        min-height: 18vw;
+    }
+    
+
+    .slide_card:not(:first-child) {
+        display: none;
+    }
+    
+    .footer {
+        font-size: 2.2vw;
+        padding: 1.8vw 0;
+        position: relative;
+        bottom: 0;
+        height: auto;
+        min-height: 7vw;
+    }
+    
+    .footer_text_container {
+        padding: 0 1.8vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.8vw;
+    }
+    
+    .footer_text_left,
+    .footer_text_right {
+        font-size: 2.2vw;
+        display: block;
+        text-align: center;
+    }
+    
+
+    .whole {
+        flex-direction: column;
+        gap: 5vw;
+        margin-bottom: 5vw;
+        margin-top: 5vw;
+        font-size: 3vw;
+    }
+    
+    .first_half {
+        width: 100%;
+        gap: 5vw;
+    }
+    
+    .half_half {
+        flex-direction: column;
+        width: 100%;
+        align-self: center;
+        gap: 3vw;
+    }
+    
+    .second_half {
+        align-items: center;
+        width: 100%;
+        gap: 5vw;
+    }
+    
+    .second_half p,
+    .second_half h2 {
+        align-self: center;
+        width: 85vw;
+        text-align: center;
+        font-size: 3vw;
+        line-height: 1.4;
+    }
+    
+    .left_card_grad_circle {
+        display: none;
+    }
+    
+    .left_card_text {
+        font-size: 3vw;
+        text-align: center;
+        margin-left: 0;
+        padding: 3vw;
+    }
+    
+    .left_card_arrow_wrapper {
+        display: none;
+    }
+    
+    .image_carousel1 {
+        width: 85vw;
+        height: 50vw;
+        margin-left: 0;
+        margin: 0 auto;
+    }
+    
+    .image_carousel2 {
+        width: 85vw;
+        height: 25vw;
+        margin: 0 auto;
+    }
+    
+    .image_carousel3 {
+        width: 85vw;
+        height: 50vw;
+        margin: 0 auto;
+    }
+
+    .text {
+        width: 85vw;
+        font-size: 3vw;
+        text-align: center;
+        margin-top: 2vw;
+        margin-left: 0;
+        margin: 2vw auto;
+    }
+    
+    .easter_egg {
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center;
+        gap: 3vw;
+    }
+    
+    .character {
+        height: 30vw;
+        width: auto;
+    }
+    
+    .easter_egg .text {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        margin-left: 0;
+        width: 85vw;
+        font-size: 3vw;
+        text-align: center;
+    }
+    
+
+    .text br {
+        display: none;
+    }
+    
+
+    .text {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+    
+    .play {
+        margin: 4vw auto;
+    }
+
+    .events_menu {
+        width: 100%;
+        gap: 2vw;
+        padding: 4vw;
+    }
+    
+    .event_tab {
+        height: 8vw;
+        font-size: 4vw;
+        padding: 2vw;
+        justify-content: center;
+    }
+    
+    .event_section {
+        padding: 4vw;
+        gap: 4vw;
+    }
+    
+    .event_block {
+        flex-direction: column;
+        gap: 3vw;
+        padding: 4vw;
+    }
+    
+    .event_left h3 {
+        font-size: 4vw;
+        margin-bottom: 2vw;
+        text-align: center;
+    }
+    
+    .event_left p {
+        font-size: 4vw;
+        margin-bottom: 2vw;
+        text-align: center;
+    }
+    
+    .event_image {
+        flex: none;
+        width: 60vw;
+        height: 85vw; 
+        margin: 0 auto;
+    }
+    
+  
+    .button {
+        height: 6vw;
+        max-width: 30vw;
+        margin-left: 5vw;
+        font-size: 3vw;
+        padding: 2.5vw;
+    }
+    
+    .play {
+        margin-left: 25vw;
+        margin-top: 3vw;
+        margin-bottom: 8vw; 
+    }
+}
+
+/* ///////////////////////// Маленькие экраны ///////////////////////// */
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+    /* Вертикальная ориентация для экранов от 769px до 1024px (маленькие экраны) */
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+    /* Горизонтальная ориентация для экранов от 769px до 1024px (маленькие экраны) */
+}
+
+/* ///////////////////////// Средние экраны ///////////////////////// */
+@media screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: portrait) {
+    /* Вертикальная ориентация для экранов от 1025px до 1366px */
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) {
+    /* Горизонтальная ориентация для экранов от 1025px до 1366px */
+}
+
+/* ///////////////////////// Большие экраны ///////////////////////// */
+@media screen and (min-width: 1367px) and (max-width: 1920px) and (orientation: portrait) {
+    /* Вертикальная ориентация для экранов от 1367px до 1920px */
+}
+
+@media screen and (min-width: 1367px) and (max-width: 1920px) and (orientation: landscape) {
+    /* Горизонтальная ориентация для экранов от 1367px до 1920px */
+}
+
+/* ///////////////////////// Очень большие экраны ///////////////////////// */
+@media screen and (min-width: 1921px) and (orientation: portrait) {
+    /* Вертикальная ориентация для экранов шире 1920px */
+}
+
+@media screen and (min-width: 1921px) and (orientation: landscape) {
+    /* Горизонтальная ориентация для экранов шире 1920px */
+}
+
+/* ///////////////////////// Ультра-HD экраны (4K и выше) ///////////////////////// */
+@media screen and (min-width: 2561px) {
+    /* Поддержка для ультра-HD экранов */
+} }
