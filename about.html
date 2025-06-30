@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Сайт кафе для синестетиков и всех кому интересна синестезия">
+  <title>Humdrum Cafe</title>
+  <link rel="icon" href="./images/favicon.jpg">
+  <link href="./stylesheets/style.css" rel="stylesheet" type="text/css" />
+  
+  <!-- предзагрузка изображений для карусели -->
+  <link rel="preload" as="image" href="./images/blue.png">
+  <link rel="preload" as="image" href="./images/bleue_red.png">
+  <link rel="preload" as="image" href="./images/blue_dark.png">
+  <link rel="preload" as="image" href="./images/blue_green.png">
+  <link rel="preload" as="image" href="./images/blue_new.jpg">
+  <link rel="preload" as="image" href="./images/pictures.png">
+  <link rel="preload" as="image" href="./images/pictures2.png">
+  <link rel="preload" as="image" href="./images/pictures3.png">
+  <link rel="preload" as="image" href="./images/pictures4.png">
+  <link rel="preload" as="image" href="./images/pictures5.png">
+  <link rel="preload" as="image" href="./images/flowers.png">
+  <link rel="preload" as="image" href="./images/flowers1.png">
+  <link rel="preload" as="image" href="./images/flowers3.png">
+  <link rel="preload" as="image" href="./images/flowers4.png">
+  <link rel="preload" as="image" href="./images/flowers5.png">
+</head>
+<body>
+  <div id="custom_cursor"></div>
+  <header class="header">
+    <div class="header_content">
+      <nav class="navigation">
+        <a href="about.html" class="navigation_link">о нас</a>
+        <a href="menu.html" class="navigation_link">меню</a>
+        <a href="events.html" class="navigation_link">события</a>
+        <a href="404.html" class="navigation_link">работа с нами</a>
+      </nav>
+      <h1 class="cafe_title"><a href="index.html" style="color:inherit; text-decoration:none;">humdrum cafe</a></h1>
+      <img src="./images/arrow.svg" alt="toggle" class="toggle_arrow" id="toggle_arrow" loading="lazy" />
+    </div>
+  </header>
+<div class="whole">
+ <div class="first_half">
+<div class="half_half">   <div class="slide_card left">
+      <div class="left_card_grad_circle"></div>
+      <div class="card_content">
+        <div class="left_card_text">
+          мы всегда будем благодарны за подарки! растения, живущиие в кафе, когда-то принесли сюда гости, как и множество других любопытных вещиц. 
+        </div>
+        <div class="left_card_arrow_wrapper">
+          <img src="./images/arrow_right.svg" alt="toggle" class="toggle_arrow" id="left_card_toggle_arrow" loading="lazy" />
+        </div>
+      </div>
+    </div>
+    <div class="image_carousel1"></div></div>
+    <div class="image_carousel2"></div>
+  </div>
+<div class="second_half">
+<h2 class="category_title">место синестетов</h2>
+  <p> кафе создано, чтобы чувствовать и проживать.
+    мы установили специальные лампы во всех помещениях кафе. они почувствуют ваше настроение и засветят таким
+    цветом и с такой насыщенностью, чтобы вам точно было комфортно и любопытно находится в кафе.   </p>
+    <p>в кафе проходит множество мастер-классов, выставок, а также других интерактивов. если вы хотите стать организатором
+    события, <a href="404.html" class="underline_link">свяжитесь с нами</a> </p>
+    <p><a href="events.html" class="underline_link">архив событий за этот год тут.</a> </p>
+ <div class="image_carousel3"></div>
+</div>
+</div>
+    <footer class="footer">
+      <div class="footer_text_container">
+        <span class="footer_text footer_text_left">с 10 до 20 по будням, с 12 по 22 по выходным и праздникам</span>
+        <span class="footer_text footer_text_right">сюда по всем вопросам humdrum@cafe.ru</span>
+      </div>
+      <div class="footer_circle"></div>
+    </footer>
+  <script src="./javascripts/java-script.js"></script>
+</body>
+</html>
